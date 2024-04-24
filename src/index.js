@@ -1,17 +1,12 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ClassApp from './componens/ClassApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    // 함수 기반 컴포넌트 사용
+    <App name="송승아" age="2"/>
+    // <App />
+    // 클래스 기반 컴포넌트 사용
+    //<ClassApp name="김기정"/>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
